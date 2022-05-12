@@ -1,43 +1,14 @@
 package com.zqh.test.myfirstspringboot;
 
-import com.zqh.test.myfirstspringboot.model.AyMood;
-import com.zqh.test.myfirstspringboot.model.AyUser;
-import com.zqh.test.myfirstspringboot.model.AyUserAttachmentRel;
-import com.zqh.test.myfirstspringboot.service.AyMoodService;
-import com.zqh.test.myfirstspringboot.service.AyUserAttachmentRelService;
-import com.zqh.test.myfirstspringboot.service.AyUserService;
-import com.zqh.test.myfirstspringboot.service.impl.AyUserAttachmentRelServiceImpl;
-import com.zqh.test.myfirstspringboot.service.mq.AyMoodProducer;
-import org.apache.activemq.command.ActiveMQQueue;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.checkerframework.checker.units.qual.A;
-import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.annotation.ImportResource;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Sort;
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.core.StringRedisTemplate;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowMapper;
 import org.springframework.test.context.junit4.SpringRunner;
-
-import javax.annotation.Resource;
-import javax.jms.Destination;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.Date;
-import java.util.List;
-import java.util.concurrent.Future;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
 class MyFirstSpringBootApplicationTests {
 
-    @Test
+    /*@Test
     void contextLoads() {
     }
     //测试数据库连接等是否正常
@@ -216,5 +187,5 @@ class MyFirstSpringBootApplicationTests {
         ayUserAttachmentRel.setFileName("个人简历.doc");
         ayUserAttachmentRelService.save(ayUserAttachmentRel);
         logger.info("文档保存至MongoDB成功！");
-    }
- }
+    }*/
+}
